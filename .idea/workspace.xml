@@ -14,10 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="923350cb-5679-4405-92eb-7264677ee526" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/design.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/design.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extractor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/extractor.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/formatter.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/formatter.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595304296745</updated>
-      <workItem from="1595304300143" duration="9952000" />
+      <workItem from="1595304300143" duration="11310000" />
     </task>
     <servers />
   </component>
@@ -140,5 +138,9 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691775" />
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1595329741975">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595329741975" />
   </component>
 </project>
