@@ -15,7 +15,10 @@
   <component name="ChangeListManager">
     <list default="true" id="923350cb-5679-4405-92eb-7264677ee526" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extractor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/extractor.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/formatter.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/formatter.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KonanWorkspace">
@@ -58,7 +66,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Cargo.toml" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo Command.Run stockup">
     <configuration name="Run stockup" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package stockup --bin stockup" />
@@ -71,9 +79,48 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test extractor::my_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup extractor::my_test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test extractor::test_get" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup extractor::test_get -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test formatter::test_beautify" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup formatter::test_beautify -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo Command.Run stockup" />
+        <item itemvalue="Cargo Command.Test formatter::test_beautify" />
+        <item itemvalue="Cargo Command.Test extractor::my_test" />
+        <item itemvalue="Cargo Command.Test extractor::test_get" />
       </list>
     </recent_temporary>
   </component>
@@ -90,7 +137,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595304296745</updated>
-      <workItem from="1595304300143" duration="11310000" />
+      <workItem from="1595304300143" duration="37211000" />
     </task>
     <servers />
   </component>
@@ -106,41 +153,41 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="798" height="346" key="GridCell.Tab.0.bottom" timestamp="1595328691773">
+    <state width="798" height="346" key="GridCell.Tab.0.bottom" timestamp="1595409627307">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691773" />
-    <state width="798" height="346" key="GridCell.Tab.0.center" timestamp="1595328691745">
+    <state width="798" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627307" />
+    <state width="798" height="346" key="GridCell.Tab.0.center" timestamp="1595409627306">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691745" />
-    <state width="798" height="346" key="GridCell.Tab.0.left" timestamp="1595328691714">
+    <state width="798" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627306" />
+    <state width="798" height="346" key="GridCell.Tab.0.left" timestamp="1595409627305">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691714" />
-    <state width="798" height="346" key="GridCell.Tab.0.right" timestamp="1595328691772">
+    <state width="798" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627305" />
+    <state width="798" height="346" key="GridCell.Tab.0.right" timestamp="1595409627306">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691772" />
-    <state width="798" height="346" key="GridCell.Tab.1.bottom" timestamp="1595328691775">
+    <state width="798" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627306" />
+    <state width="798" height="346" key="GridCell.Tab.1.bottom" timestamp="1595409627158">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691775" />
-    <state width="798" height="346" key="GridCell.Tab.1.center" timestamp="1595328691775">
+    <state width="798" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627158" />
+    <state width="798" height="346" key="GridCell.Tab.1.center" timestamp="1595409627157">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691775" />
-    <state width="798" height="346" key="GridCell.Tab.1.left" timestamp="1595328691774">
+    <state width="798" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627157" />
+    <state width="798" height="346" key="GridCell.Tab.1.left" timestamp="1595409627157">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691774" />
-    <state width="798" height="346" key="GridCell.Tab.1.right" timestamp="1595328691775">
+    <state width="798" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627157" />
+    <state width="798" height="346" key="GridCell.Tab.1.right" timestamp="1595409627158">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595328691775" />
-    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1595329741975">
+    <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595409627158" />
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1595405383332">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595329741975" />
+    <state x="925" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595405383332" />
   </component>
 </project>
