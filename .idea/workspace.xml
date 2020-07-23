@@ -16,7 +16,7 @@
     <list default="true" id="923350cb-5679-4405-92eb-7264677ee526" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/design.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/design.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formatter.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/formatter.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extractor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/extractor.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,13 +114,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test test_url" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup test_url -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Cargo Command.Run stockup" />
+        <item itemvalue="Cargo Command.Test test_url" />
         <item itemvalue="Cargo Command.Test formatter::test_beautify" />
         <item itemvalue="Cargo Command.Test extractor::test_get" />
         <item itemvalue="Cargo Command.Test extractor::my_test" />
-        <item itemvalue="Cargo Command.Test formatter::test_beautify" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595304296745</updated>
-      <workItem from="1595304300143" duration="45851000" />
+      <workItem from="1595304300143" duration="51693000" />
     </task>
     <servers />
   </component>
@@ -153,38 +165,42 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="798" height="346" key="GridCell.Tab.0.bottom" timestamp="1595419263815">
+    <state width="798" height="346" key="GridCell.Tab.0.bottom" timestamp="1595475774181">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263815" />
-    <state width="798" height="346" key="GridCell.Tab.0.center" timestamp="1595419263814">
+    <state width="798" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
+    <state width="798" height="346" key="GridCell.Tab.0.center" timestamp="1595475774181">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263814" />
-    <state width="798" height="346" key="GridCell.Tab.0.left" timestamp="1595419263813">
+    <state width="798" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
+    <state width="798" height="346" key="GridCell.Tab.0.left" timestamp="1595475774180">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263813" />
-    <state width="798" height="346" key="GridCell.Tab.0.right" timestamp="1595419263814">
+    <state width="798" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774180" />
+    <state width="798" height="346" key="GridCell.Tab.0.right" timestamp="1595475774181">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263814" />
-    <state width="798" height="346" key="GridCell.Tab.1.bottom" timestamp="1595419263655">
+    <state width="798" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
+    <state width="798" height="346" key="GridCell.Tab.1.bottom" timestamp="1595475774046">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263655" />
-    <state width="798" height="346" key="GridCell.Tab.1.center" timestamp="1595419263654">
+    <state width="798" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774046" />
+    <state width="798" height="346" key="GridCell.Tab.1.center" timestamp="1595475774045">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263654" />
-    <state width="798" height="346" key="GridCell.Tab.1.left" timestamp="1595419263654">
+    <state width="798" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
+    <state width="798" height="346" key="GridCell.Tab.1.left" timestamp="1595475774045">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263654" />
-    <state width="798" height="346" key="GridCell.Tab.1.right" timestamp="1595419263655">
+    <state width="798" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
+    <state width="798" height="346" key="GridCell.Tab.1.right" timestamp="1595475774045">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595419263655" />
+    <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
+    <state x="961" y="291" width="598" height="490" key="find.popup" timestamp="1595472807696">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="961" y="291" width="598" height="490" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1595472807696" />
     <state x="925" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1595405383332">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
