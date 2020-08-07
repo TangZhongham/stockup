@@ -14,9 +14,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="923350cb-5679-4405-92eb-7264677ee526" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/reader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/storage.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/design.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/design.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/extractor.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/extractor.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,33 +81,33 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test extractor::my_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package stockup --bin stockup extractor::my_test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test extractor::test_get" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package stockup --bin stockup extractor::test_get -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test formatter::test_beautify" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package stockup --bin stockup formatter::test_beautify -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test reader::test_read_list" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup reader::test_read_list -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test storage::test_store" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package stockup --bin stockup storage::test_store -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -130,14 +133,15 @@
       <list>
         <item itemvalue="Cargo Command.Run stockup" />
         <item itemvalue="Cargo Command.Test test_url" />
+        <item itemvalue="Cargo Command.Test storage::test_store" />
+        <item itemvalue="Cargo Command.Test reader::test_read_list" />
         <item itemvalue="Cargo Command.Test formatter::test_beautify" />
-        <item itemvalue="Cargo Command.Test extractor::test_get" />
-        <item itemvalue="Cargo Command.Test extractor::my_test" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -149,7 +153,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595304296745</updated>
-      <workItem from="1595304300143" duration="51693000" />
+      <workItem from="1595304300143" duration="54292000" />
+      <workItem from="1595585429777" duration="7250000" />
+      <workItem from="1596179335188" duration="11000" />
+      <workItem from="1596780992872" duration="5362000" />
     </task>
     <servers />
   </component>
@@ -163,40 +170,45 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="798" height="346" key="GridCell.Tab.0.bottom" timestamp="1595475774181">
+    <state x="940" y="123" width="640" height="827" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1595597902454">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
-    <state width="798" height="346" key="GridCell.Tab.0.center" timestamp="1595475774181">
+    <state x="940" y="123" width="640" height="827" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1595597902454" />
+    <state width="798" height="392" key="GridCell.Tab.0.bottom" timestamp="1596786095252">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
-    <state width="798" height="346" key="GridCell.Tab.0.left" timestamp="1595475774180">
+    <state width="798" height="392" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095252" />
+    <state width="798" height="392" key="GridCell.Tab.0.center" timestamp="1596786095251">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774180" />
-    <state width="798" height="346" key="GridCell.Tab.0.right" timestamp="1595475774181">
+    <state width="798" height="392" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095251" />
+    <state width="798" height="392" key="GridCell.Tab.0.left" timestamp="1596786095246">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774181" />
-    <state width="798" height="346" key="GridCell.Tab.1.bottom" timestamp="1595475774046">
+    <state width="798" height="392" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095246" />
+    <state width="798" height="392" key="GridCell.Tab.0.right" timestamp="1596786095251">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774046" />
-    <state width="798" height="346" key="GridCell.Tab.1.center" timestamp="1595475774045">
+    <state width="798" height="392" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095251" />
+    <state width="798" height="392" key="GridCell.Tab.1.bottom" timestamp="1596786095254">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
-    <state width="798" height="346" key="GridCell.Tab.1.left" timestamp="1595475774045">
+    <state width="798" height="392" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095254" />
+    <state width="798" height="392" key="GridCell.Tab.1.center" timestamp="1596786095253">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
-    <state width="798" height="346" key="GridCell.Tab.1.right" timestamp="1595475774045">
+    <state width="798" height="392" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095253" />
+    <state width="798" height="392" key="GridCell.Tab.1.left" timestamp="1596786095252">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="798" height="346" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1595475774045" />
+    <state width="798" height="392" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095252" />
+    <state width="798" height="392" key="GridCell.Tab.1.right" timestamp="1596786095253">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="798" height="392" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1596786095253" />
     <state x="961" y="291" width="598" height="490" key="find.popup" timestamp="1595472807696">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
